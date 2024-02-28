@@ -51,16 +51,44 @@ function saudacao() {
     <button @click="decrementar">Decrementar</button>
     <button @click="apagar">Reiniciar</button>
 
-    <div v-if="contador < 10" style="background-color: red; margin-top: 10px; color: black">
+    <div
+      v-if="contador < 10"
+      style="
+        background-color: red;
+        margin-top: 10px;
+        color: black;
+        text-align: center;
+        width: 50%;
+        margin-left: 25%;
+      "
+    >
       O número é menor que 10.
     </div>
-    <div v-if="contador > 10" style="background-color: green; margin-top: 10px; color: black">
+    <div
+      v-if="contador > 10"
+      style="
+        background-color: green;
+        margin-top: 10px;
+        color: black;
+        text-align: center;
+        width: 50%;
+        margin-left: 25%;
+      "
+    >
       O número é maior que 10.
     </div>
     <div
       v-if="contador == 10"
-      style="background-color: rgb(166, 255, 1); margin-top: 10px; color: black"
-    >O número é 10.
+      style="
+        background-color: rgb(166, 255, 1);
+        margin-top: 10px;
+        color: black;
+        text-align: center;
+        width: 50%;
+        margin-left: 25%;
+      "
+    >
+      O número é 10.
     </div>
   </div>
 </template>
