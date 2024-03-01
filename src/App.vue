@@ -18,8 +18,8 @@ function decrementar() {
 
 //INFORMAÇÕES
 
-const nome = 'Manoel - Nicolas'
-const idade = 16
+const nome = prompt(`Informe o seu nome`)
+const idade = Number(prompt(`Informe a sua idade`))
 
 function inverter(texto) {
   return texto.split('').reverse().join('')
@@ -96,24 +96,24 @@ function saudacao() {
 <style scoped>
 button {
   font-weight: bold;
-  background-color: rgb(31, 92, 92);
+  background-color: white;
   border: 0;
   border-radius: 10px;
-  color: rgb(255, 255, 255);
+  color: black;
   margin-left: 10px;
   margin-top: 15px;
   margin-left: 20px;
 }
 
 button:hover {
-  background-color: rgb(44, 153, 153);
+  background-color: grey;
 }
 
 .info {
   background-color: rgb(0, 0, 0);
   padding: 20px 30px;
   color: rgb(183, 210, 219);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 h1 {
@@ -123,8 +123,12 @@ h1 {
 }
 
 .contador {
-  background-color: rgb(28, 63, 63);
-  border-radius: 10px;
+  background-color: black;
+  border-radius: 20px;
   margin-left: 10px;
+}
+
+template {
+  background-color: red;
 }
 </style>
