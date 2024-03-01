@@ -85,13 +85,14 @@ button:hover {
 h1 {
   color: white;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.5em; 
 }
 
 .contador {
   background-color: black;
   border-radius: 20px;
   margin-left: 10px;
+  
 }
 
 template {
