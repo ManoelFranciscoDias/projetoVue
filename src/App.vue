@@ -51,45 +51,11 @@ function saudacao() {
     <button @click="decrementar">Decrementar</button>
     <button @click="apagar">Reiniciar</button>
 
-    <div
-      v-if="contador < 10"
-      style="
-        background-color: red;
-        margin-top: 10px;
-        color: black;
-        text-align: center;
-        width: 50%;
-        margin-left: 25%;
-      "
-    >
-      O número é menor que 10.
-    </div>
-    <div
-      v-if="contador > 10"
-      style="
-        background-color: green;
-        margin-top: 10px;
-        color: black;
-        text-align: center;
-        width: 50%;
-        margin-left: 25%;
-      "
-    >
-      O número é maior que 10.
-    </div>
-    <div
-      v-if="contador == 10"
-      style="
-        background-color: rgb(166, 255, 1);
-        margin-top: 10px;
-        color: black;
-        text-align: center;
-        width: 50%;
-        margin-left: 25%;
-      "
-    >
-      O número é 10.
-    </div>
+    <div class="msgRed" v-if="contador < 10">O número é menor que 10.</div>
+
+    <div class="msgGreen" v-if="contador > 10">O número é maior que 10.</div>
+
+    <div class="msg10" v-if="contador == 10">O número é 10.</div>
   </div>
 </template>
 
@@ -130,5 +96,34 @@ h1 {
 
 template {
   background-color: red;
+}
+
+.msgRed {
+  background-color: rgb(194, 71, 71);
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+  width: 50%;
+  border-radius: 10px;
+  margin-left: 25%;
+}
+.msgGreen {
+  background-color: rgb(72, 153, 72);
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 10px;
+}
+
+.msg10 {
+  background-color: rgb(127, 153, 80);
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 10px;
 }
 </style>
